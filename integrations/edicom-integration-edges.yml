@@ -1,0 +1,16 @@
+generated: '2026-10-18'
+method: none
+source:
+- https://zapier.com/apps/edicom/integrations
+- https://n8n.io/integrations/edicom/
+- https://composio.dev/toolkits/edicom
+- https://monid.ai/tools/edicom
+checked:
+- https://composio.dev/toolkits/edicom
+- https://monid.ai/tools/edicom
+- https://n8n.io/integrations/edicom/
+- https://zapier.com/apps/edicom/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

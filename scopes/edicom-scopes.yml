@@ -1,0 +1,5 @@
+generated: '2026-10-18'
+method: none
+source: ''
+scopes: []
+note: 'No OAuth scopes documentation found. Edicom iPaaS page mentions OAuth2/OIDC support but no public API documentation with scopes was found.'

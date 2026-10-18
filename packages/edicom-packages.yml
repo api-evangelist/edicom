@@ -1,0 +1,5 @@
+generated: '2026-10-18'
+method: none
+source: ''
+packages: []
+note: 'No first-party SDKs or client libraries found in package registries (npm, PyPI, RubyGems, crates.io, Maven) or on documentation pages. Edicom appears to provide enterprise integration solutions rather than public API client libraries.'

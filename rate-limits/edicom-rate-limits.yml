@@ -1,0 +1,7 @@
+generated: '2026-10-18'
+method: none
+source: ''
+name: 'Edicom rate limits'
+limit_count: 0
+limits: []
+note: 'No public API rate limits documentation found. Edicom appears to provide enterprise integration solutions with custom implementations rather than publicly documented APIs with rate limits.'

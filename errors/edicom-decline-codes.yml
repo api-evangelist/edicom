@@ -1,0 +1,5 @@
+generated: '2026-10-18'
+method: none
+source: ''
+decline_codes: []
+note: 'Edicom is not a payments/authorization provider (provides EDI, e-invoicing, and integration solutions). No decline codes documentation expected or found.'

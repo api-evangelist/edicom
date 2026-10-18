@@ -1,0 +1,116 @@
+generated: '2026-10-18'
+method: searched
+source:
+- https://policies.edicomgroup.com/privacy/index.htm
+- https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+- https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_US_en_1.pdf
+- https://policies.edicomgroup.com/legal/es/legal.htm
+note: >-
+  EDICOM publishes a privacy hub with per-entity policies (Argentina, Brasil, Colombia, Europe, Mexico, USA).
+  Signals below come from the EU English policy v3.3 (17/04/2026, EDICOM CAPITAL, S.L.) and the US English
+  policy v1.0 (16/03/2026, EDICOM CORP.), both PDFs linked from the hub. The legal notice (rendered; it is
+  JavaScript-built) covers website use only and adds no further signal.
+signals:
+  data_subject_request:
+    url: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+    section: '6. Exercising data protection rights / 6.1 How can I exercise these rights?'
+    channel: dpo@edicomgroup.com
+    rights_named: [access, rectification, erasure, portability, restriction, objection, withdrawal of consent, complaint to supervisory authority]
+    forms: https://policies.edicomgroup.com/dpo-forms/index.htm
+    evidence:
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        Data subjects have the right to access their personal data, as well as to request the rectification of
+        inaccurate or incomplete data, or to request its erasure where, amongst other reasons, the data is no
+        longer necessary for the purposes for which it was collected; and, in any event, the right to lodge a
+        complaint with a supervisory authority.
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        In certain circumstances, you may exercise the right to data portability. Should you wish for your data
+        to be processed by another entity, Edicom will facilitate the transfer of your data to the new data
+        controller where applicable.
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        In any case, forms are available on our website to enable you to exercise the aforementioned rights more easily
+        and quickly by sending them to the Data Protection Officer’s contact address.
+    note: >-
+      GDPR rights are enumerated with a named DPO (Jose Romero Artigas) and email channel, plus downloadable
+      request forms. No response timeframe is stated in the EU policy. The same section states "Edicom does not
+      make automated decisions, including profiling, that produce legal effects on the data subject or similarly
+      significantly affect them."
+  data_retention:
+    url: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+    section: '3. Retention periods'
+    evidence:
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        Client Information necessary to manage the contractual relationship and comply with legal obligations will be
+        retained for the duration of the contractual relationship and, once it has ended, for the periods necessary to
+        address any potential legal liabilities, which will generally be 5 years, and in the case of tax and accounting
+        documentation, up to 6 years, in accordance with applicable regulations.
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        With regard to the processing of data for the provision of trust services, the period for which information relating
+        to the services provided must be retained shall be 15 years from the expiry of the certificate or the termination
+        of the service provided.
+    note: >-
+      Concrete retention periods per data category: client data generally 5 years after contract end (tax/accounting
+      up to 6), trust-service records 15 years, failed video-identification records 5 years, candidate data up to
+      6 months after a selection process.
+  data_residency:
+    url: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+    section: '5. International transfer'
+    evidence:
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        Edicom guarantees that the processing of personal data will take place within the European Economic Area
+        (EEA), or at the group’s offices to facilitate our clients’ international operations and in the data subject interest.
+        No personal health data is transferred to any country outside the European Economic Area.
+    note: >-
+      An EEA processing commitment, qualified by processing at group offices abroad; transfers outside the EEA rely on
+      adequacy decisions, SCCs or BCRs (Art. 44 et seq. GDPR). Health data is stated never to leave the EEA.
+  subprocessors:
+    url: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+    section: '4. Recipients of your data'
+    published_list: false
+    evidence:
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_EU_en_3_3.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        Edicom may grant access to Client Information to contracted service providers necessary for maintaining our
+        relationship with you. Edicom does not share, sell, rent or trade information with third parties for promotional
+        purposes, although it may, in some cases, share such information with partners who assist in the provision of
+        services.
+    note: >-
+      Discloses that service providers and partners receive client data, but names none; no sub-processor list was
+      found on the pages read.
+  incident_notification:
+    url: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_US_en_1.pdf
+    section: '2 Security Breach Notification'
+    stated_sla: 'within 30 days of discovering the breach'
+    jurisdiction: New York SHIELD Act (EDICOM CORP.)
+    evidence:
+    - source: https://policies.edicomgroup.com/privacy/version/EDICOM_privacy_US_en_1.pdf
+      http_status: 200
+      fetched: '2026-10-18'
+      quote: >-
+        We will notify you (and any other affected Customer) of the breach as soon as possible, providing information about the
+        nature of the incident and the categories of data involved, as well as recommendations on measures to protect your identity. In
+        any case, such individual notice will be provided within 30 days of discovering the breach, complying with the maximum
+        timeframe established by law.
+    note: >-
+      Applies to services contracted with EDICOM CORP. (USA); also commits to notify the New York Attorney General.
+      The EU policy read here contains no breach-notification clause.

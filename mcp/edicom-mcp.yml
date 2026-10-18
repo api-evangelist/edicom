@@ -1,0 +1,25 @@
+name: Edicom MCP Server
+type: MCPServer
+generated: '2026-10-18'
+method: none
+status: none
+description: >-
+  No official hosted or local MCP server from EDICOM was found. A web search for an EDICOM MCP server
+  returned only generic Model Context Protocol material, and pre-flight contract discovery reported
+  mcp absent on api.edicomgroup.com, edicomgroup.com, careers.edicomgroup.com, platform.edicomgroup.com
+  and policies.edicomgroup.com. No public OpenAPI contract exists in this repo, so no candidate tool
+  list could be derived either.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://edicomgroup.com
+  status: 200
+  note: Company website; no MCP or developer portal linked.
+- url: https://platform.edicomgroup.com/graphql
+  status: 200
+  note: Pre-flight graded opaque (control path also 200), so it proves nothing either way.
+- url: https://platform.edicomgroup.com/llms.txt
+  status: 404

@@ -1,0 +1,9 @@
+generated: '2026-10-18'
+method: none
+source: ''
+idempotency:
+  coverage: na
+pagination: ''
+reversibility:
+  coverage: na
+note: 'No public API documentation found to document conventions. Edicom appears to provide enterprise integration solutions with custom implementations rather than publicly documented APIs.'

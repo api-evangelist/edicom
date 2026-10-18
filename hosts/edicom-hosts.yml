@@ -1,0 +1,100 @@
+generated: '2026-10-18'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 6
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - identity
+  - legal
+  - other
+  - website
+hosts:
+- host: api.edicomgroup.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: edicomgroup.com
+  role: api
+  relation: own
+- host: careers.edicomgroup.com
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: edicomgroup.com
+  role: other
+  relation: own
+- host: edicomgroup.com
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Blog
+  - Documentation
+  - Support
+  - Newsroom
+  - About
+  serves:
+  - docs
+  registrable_domain: edicomgroup.com
+  role: website
+  relation: own
+- host: platform.edicomgroup.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Login
+  serves: []
+  registrable_domain: edicomgroup.com
+  role: identity
+  relation: own
+- host: policies.edicomgroup.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - PrivacyPolicy
+  - TermsOfService
+  serves: []
+  registrable_domain: edicomgroup.com
+  role: legal
+  relation: own
+- host: services.edicomgroup.com
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: edicomgroup.com
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform

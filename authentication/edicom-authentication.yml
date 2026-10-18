@@ -1,0 +1,5 @@
+generated: '2026-10-18'
+method: none
+source: ''
+schemes: []
+note: 'No public API authentication documentation found. Edicom iPaaS page mentions OAuth2/OIDC, SSO, RBAC support but no public API documentation with authentication schemes was found.'

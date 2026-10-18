@@ -1,23 +1,98 @@
 aid: edicom
+
 name: Edicom
-description: 'Edicom is a company surfaced via the API Evangelist harvest backlog (source: kin-score-markets)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: EDICOM is a Spanish B2B data-integration company, operating since 1995 and headquartered in the Parque Tecnológico
+  de Paterna, Valencia, that provides cloud EDI, electronic invoicing, VAT/tax reporting and international e-compliance solutions.
+  Its EDICOM Global Platform and iPaaS integration platform connect businesses with trading partners and tax authorities via
+  AS2, AS4, OFTP2, SFTP, VAN, web services and APIs, with real-time tax reporting coverage in 85+ countries.
+
 url: https://raw.githubusercontent.com/api-evangelist/edicom/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:kin-score-markets
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-18 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-18'
+
 modified: '2026-10-18'
+
 tags:
 - Company
-apis: []
+- EDI
+- E-Invoicing
+- Tax Compliance
+- B2B Integration
+- iPaaS
+- VAT Reporting
+- PEPPOL
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://edicomgroup.com/.resources/edicom-module/webresources/images/Logo-mini__blue.svg
+
 common:
+- type: Hosts
+  url: hosts/edicom-hosts.yml
+- type: DomainSecurity
+  url: security/edicom-domain-security.yml
 - type: Website
   url: https://edicomgroup.com
+- type: Blog
+  url: https://edicomgroup.com/blog
+- type: Documentation
+  url: https://edicomgroup.com/resources/guides
+- type: Support
+  url: https://edicomgroup.com/contact
+- type: Login
+  url: https://platform.edicomgroup.com/
+- type: PrivacyPolicy
+  url: https://policies.edicomgroup.com/privacy/index.htm
+- type: TermsOfService
+  url: https://policies.edicomgroup.com/legal/es/legal.htm
+- type: Newsroom
+  url: https://edicomgroup.com/sitemap/news
+- type: LinkedIn
+  url: https://www.linkedin.com/company/edicom/
+- type: About
+  url: https://edicomgroup.com/about-us
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Website edicomgroup.com verified (title names EDICOM); pointers from site_links and homepage links, all fetched
+    200. github.com/edicom is an empty unrelated user account, not recorded. No public developer portal/API reference found.
+  evidence:
+  - url: https://edicomgroup.com
+    status: 200
+  - url: https://edicomgroup.com/about-us
+    status: 200
+  - url: https://edicomgroup.com/contact
+    status: 200
+  - url: https://platform.edicomgroup.com/
+    status: 200
+  - url: https://edicomgroup.com/blog
+    status: 200
+  - url: https://edicomgroup.com/resources/guides
+    status: 200
+  - url: https://policies.edicomgroup.com/privacy/index.htm
+    status: 200
+  - url: https://policies.edicomgroup.com/legal/es/legal.htm
+    status: 200
+x-enrichment:
+  date: '2026-10-18'
+  status: enriched
+  artifacts_added: 22
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=deepseek,regulatory=anthropic
